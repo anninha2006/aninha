@@ -4,19 +4,28 @@
              x:Class="aninha.MainPage"
              Shell.NavBarIsVisible="false"
              Padding="0">
-         
-   <VerticalStackLayout>
-      <Image Aspect="AspectFill"
-             Source="velhooeste.jpg"
-             HorizontalOptions="FillAndExpand"/>
-  <Button Text="COMEÇAR"
-         Clicked="Button_Clicked"
-         Margin="5, 5"
-         FontSize="16"
-         TextColor="Black"
-         BackgroundColor="#ba7827"
-         HorizontalOptions="FillAndExpand"
-         VerticalOptions="Center"/>
+     <Grid>
+       <Image Aspect="AspectFill"
+              Source="velhooeste.jpg"
+              HorizontalOptions="FillAndExpand"/>
+       <VerticalStackLayout>       
+              <Button Text="COMEÇAR"
+                     Clicked="Button_Clicked"
+                     Margin="5, 5"
+                     FontSize="16"
+                     TextColor="Black"
+                     BackgroundColor="#ba7827"
+                     HorizontalOptions="FillAndExpand"/>
+              <Button Text="Sobre"
+                     Clicked="roupa"
+                     Margin="5, 5"
+                     FontSize="16"
+                     TextColor="Black"
+                     BackgroundColor="#eb9757"
+                     HorizontalOptions="FillAndExpand"/>
+              
 
-  </VerticalStackLayout> 
+       </VerticalStackLayout> 
+
+     </Grid>  
 </ContentPage>
