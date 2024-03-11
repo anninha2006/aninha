@@ -8,7 +8,8 @@
        <Image Aspect="AspectFill"
               Source="velhooeste.jpg"
               HorizontalOptions="FillAndExpand"/>
-       <VerticalStackLayout>       
+       <VerticalStackLayout VerticalOptions="End"
+       Margin="10,0,10,50">       
               <Button Text="COMEÇAR"
                      Clicked="Button_Clicked"
                      Margin="5, 5"
@@ -23,9 +24,14 @@
                      TextColor="Black"
                      BackgroundColor="#eb9757"
                      HorizontalOptions="FillAndExpand"/>
-              
-
        </VerticalStackLayout> 
+
+                 <Frame Margin="20,10"
+                     IsVisible="false"
+                     CornerRadius="30"
+                     BorderColor="black"
+                     BackgroundColor="#ba8632">
+              </Frame>
 
      </Grid>  
 </ContentPage>
