@@ -14,9 +14,15 @@ public partial class MainPage : ContentPage
     { 
        Application.Current.MainPage=new iniciopage();
     }
-    void roupa(object sender, EventArgs e)
-	{
-		Application.Current.MainPage=new iniciopage();
-	}
+	void ButtonSobre_Clicked(object sender, EventArgs e)
+    { 
+       SobreFrame.IsVisible = true;
+    }
+ 
+	void ButtonVoltar_Clicked(object sender, EventArgs e)
+    { 
+       SobreFrame.IsVisible = true;
+    }
 }
+   
 

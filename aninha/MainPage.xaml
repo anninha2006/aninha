@@ -5,33 +5,71 @@
              Shell.NavBarIsVisible="false"
              Padding="0">
      <Grid>
+     <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="70"/>
+              <RowDefinition Height="70"/>
+       </Grid.RowDefinitions>
        <Image Aspect="AspectFill"
               Source="velhooeste.jpg"
-              HorizontalOptions="FillAndExpand"/>
-       <VerticalStackLayout VerticalOptions="End"
-       Margin="10,0,10,50">       
+              HorizontalOptions="FillAndExpand"
+              Grid.Row="0"
+              Grid.RowSpan="3"/>
+      
               <Button Text="COMEÇAR"
                      Clicked="Button_Clicked"
                      Margin="5, 5"
                      FontSize="16"
                      TextColor="Black"
                      BackgroundColor="#ba7827"
-                     HorizontalOptions="FillAndExpand"/>
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="1"/>
               <Button Text="Sobre"
-                     Clicked="roupa"
+                     Clicked="ButtonSobre_Clicked"
                      Margin="5, 5"
                      FontSize="16"
                      TextColor="Black"
                      BackgroundColor="#eb9757"
-                     HorizontalOptions="FillAndExpand"/>
-       </VerticalStackLayout> 
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="2"/>
+       
+<!-- =========================================================================  -->
 
-                 <Frame Margin="20,10"
+              <Frame Margin="20,10"
+                     x:Name="SobreFrame"
                      IsVisible="false"
                      CornerRadius="30"
                      BorderColor="black"
-                     BackgroundColor="#ba8632">
-              </Frame>
-
+                     BackgroundColor="#ba7827"
+                     Grid.Row="0"
+                     Grid.RowSpan="3">
+       <Grid>
+              <Grid.RowDefinitions>
+                     <RowDefinition Height="70"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="70"/>
+              </Grid.RowDefinitions>
+              <Label Text="Sobre"
+                     TextColor="Black"
+                     Grid.Row="0"
+                     FontSize="30"
+                     HorizontalTextAlignment="Center"/>
+              <Label Text="um viajante em busca de novas aventuras decidiu viajar para o faroeste e chegando la descobrir grandes misterios e assim começa a nossa historia "
+                     TextColor="Black"
+                     Grid.Row="1"
+                     FontSize="20"/>
+              <Button Text="Voltar"
+                     Margin="5, 5"
+                     FontSize="16"
+                     TextColor="Black"
+                     BackgroundColor="#eb9757"
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="2"
+                     Clicked="ButtonVoltar_Clicked"/>
+                     
+      
+       </Grid> 
+</Frame>
+<!-- =========================================================================  --> 
      </Grid>  
 </ContentPage>
