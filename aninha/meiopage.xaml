@@ -1,7 +1,8 @@
-<!-- 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="aninha.MainPage"
+             x:Class="aninha.meiopage"
              Shell.NavBarIsVisible="false"
-             Padding="0"> -->
+             Padding="0"> 
+             <Label Text="teste"/>
+</ContentPage>

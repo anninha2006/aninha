@@ -59,13 +59,13 @@
                      Grid.Row="1"
                      FontSize="20"/>
               <Button Text="Voltar"
+                     Clicked="ButtonVoltarMenu"
                      Margin="5, 5"
                      FontSize="16"
                      TextColor="Black"
                      BackgroundColor="#eb9757"
                      HorizontalOptions="FillAndExpand"
-                     Grid.Row="2"
-                     Clicked="ButtonVoltar_Clicked"/>
+                     Grid.Row="2"/>
                      
       
        </Grid> 

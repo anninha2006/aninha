@@ -1,12 +1,10 @@
-using System.Security.Cryptography;
-
 namespace aninha;
 
-public partial class MainPage : ContentPage
+public partial class meiopage : ContentPage
 {
 
-	public MainPage()
+	public meiopage()
 	{
-		InitializeComponent();	
+		InitializeComponent();
 	}
 }

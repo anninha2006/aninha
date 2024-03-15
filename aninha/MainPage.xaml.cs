@@ -23,6 +23,10 @@ public partial class MainPage : ContentPage
     { 
        SobreFrame.IsVisible = true;
     }
+    void ButtonVoltarMenu(object sender, EventArgs e)
+    { 
+       SobreFrame.IsVisible = false;
+    }
 }
    
 
