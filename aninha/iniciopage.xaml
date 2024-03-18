@@ -5,6 +5,15 @@
              Shell.NavBarIsVisible="false"
              Padding="0">
 
+              <Frame Margin="20,10"
+                     x:Name="COMEÇARFrame"
+                     IsVisible="false"
+                     CornerRadius="30"
+                     BorderColor="black"
+                     BackgroundColor="#ba7827"
+                     Grid.Row="0"
+                     Grid.RowSpan="3">
+
      <Grid>
                <Grid.RowDefinitions>
                      <RowDefinition Height="70"/>
@@ -27,44 +36,30 @@
                      BackgroundColor="#eb9757"
                      HorizontalOptions="FillAndExpand"
                      Grid.Row="2"
-                     Clicked="ButtonCOMEÇAR_Clicked"/>
-
-              <Button Text="Continuar"
-                     Clicked="ButtonContinuar_Clicked"
-                     Margin="5, 5"
-                     FontSize="16"
-                     TextColor="Black"
-                     BackgroundColor="#eb9757"
-                     HorizontalOptions="FillAndExpand"
-                     Grid.Row="2"/>
-       
-       <Frame x:Name="ContinuarFrame"
-               IsVisible="false"> 
-       </Frame>
-        
-        <Frame Margin="20,10"
-                     x:Name="COMEÇARFrame"
+                    />
+              
+              <Frame Margin="20,10"
+                     x:Name="ContinuarFrame"
                      IsVisible="false"
                      CornerRadius="30"
                      BorderColor="black"
                      BackgroundColor="#ba7827"
                      Grid.Row="0"
                      Grid.RowSpan="3">
-       <Grid>
-              <Grid.RowDefinitions>
-                     <RowDefinition Height="70"/>
-                     <RowDefinition Height="*"/>
-                     <RowDefinition Height="70"/>
-              </Grid.RowDefinitions>
-              <Label Text="COMEÇAR"
-                     TextColor="Black"
-                     Grid.Row="0"
-                     FontSize="30"
-                     HorizontalTextAlignment="Center"/>
-       </Grid>
-       </Frame>
-      
-       </Grid> 
 
-      </ContentPage>
+              <Button Text="Continuar"
+                     Margin="5, 5"
+                     FontSize="16"
+                     TextColor="Black"
+                     BackgroundColor="#eb9757"
+                     HorizontalOptions="FillAndExpand"
+                     Grid.Row="2"
+                     />
+       </Frame>
+
+       </Grid> 
+</Frame>
+<!-- ======================================================== -->
+     
+</ContentPage>
                
